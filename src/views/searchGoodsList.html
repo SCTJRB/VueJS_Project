@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8"><link rel="stylesheet" href="../css/common.css">
+    <script src="../js/flexible.js"></script>
+    <title>商品列表</title>
+</head>
+<style>
+  .top {
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  .top .top-list {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: center;
+    margin-right: .5rem;
+    color: #999;
+    padding: .333333rem 0;
+  }
+  .top .top-list .top-list-icon {
+    width: .4rem;
+    height: .36rem;
+    margin-left: 1rem;
+  }
+  .top .top-list .top-list-icon1 {
+    width: .16rem;
+    height: .106666rem;
+    display: inline-block;
+    background: url(../img/top-list-icon1.png) center no-repeat;
+    vertical-align: middle;
+    background-size: contain;
+  }
+  .top .top-list .top-list-icon2 {
+    width: .16rem;
+    height: .2133333rem;
+    display: inline-block;
+    background: url(../img/top-list-icon2.png) center no-repeat;
+    vertical-align: initial;
+    background-size: contain;
+  }
+  .top .top-list.top-list-active {
+    color: #e94559;
+  }
+  .top .top-list.top-list-active .top-list-icon1 {
+    background-image: url(../img/top-list-active.png);
+  }
+
+  .goodsListDiv ul li{
+    position: relative;
+    border-bottom:1px solid #f1f1f1;
+    padding: .266rem .2933rem;
+  }
+  .goodsListDiv ul li img{
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    /*border: 1px solid #f1f1f1;*/
+  }
+  .goodsListDiv ul li div{
+    position: absolute;
+    top: .266rem;
+    left:2.6933rem;
+    height: 2.4rem;
+    display: inline-block;
+    width: 7rem;
+    padding-left: .346rem;
+    color: #333333;
+    font-size: .346rem;
+    font-family: 微软雅黑;
+  }
+  .goodsListDiv div .price{
+    margin-top: .35rem;
+  }
+  .goodsListDiv div .price span{
+    font-size: .373rem;
+    color: #ea445a;
+  }
+  .goodsListDiv div .price del{
+    font-size: .315rem;
+    color: #999999;
+  }
+  .goodsListDiv div .tips{
+    position: absolute;
+    bottom: 0;
+  }
+  .goodsListDiv div .tips i{
+    display: inline-block;
+    background: #f1f1f1;
+    font-style: normal;
+    font-size: .3rem;
+    margin-right: .2rem;
+    padding: .044rem .15rem;
+    border-radius: 5px;
+    color: #ababab;
+  }
+</style>
+<body>
+<ul class="top">
+  <li class="top-list top-list-active">
+    综合
+    <span class="top-list-icon1"></span>
+  </li>
+  <li class="top-list">最新</li>
+  <li class="top-list">
+    价格
+    <span class="top-list-icon2"></span>
+  </li>
+  <li class="top-list">
+    <img src="../img/top-list-icon.png" alt="" class="top-list-icon">
+  </li>
+</ul>
+    <div class="goodsListDiv">
+
+        <ul>
+          <li>
+            <img src="../img/goodsImg.png">
+            <div>
+                <p>Apple iPhone 6 Plus 十二期免息分期支付  苹果手机 移动联动4G  玫瑰金【eBay精…</p>
+                <p class="price"><span>&yen; 5899</span>&nbsp;&nbsp;<del>&yen; 7299</del></p>
+                <p class="tips"> <i>标签一</i><i>标签二</i><i>标签三</i></p>
+            </div>
+          </li>
+          <li>
+            <img src="../img/goodsImg.png">
+            <div>
+              <p>Apple iPhone 6 Plus 十二期免息分期支付  苹果手机 移动联动4G  玫瑰金【eBay精…</p>
+              <p class="price"><span>&yen; 5899</span>&nbsp;&nbsp;<del>&yen; 7299</del></p>
+              <p class="tips"> <i>标签一</i><i>标签二</i><i>标签三</i></p>
+            </div>
+          </li>
+          <li>
+            <img src="../img/goodsImg.png">
+            <div>
+              <p>Apple iPhone 6 Plus 十二期免息分期支付  苹果手机 移动联动4G  玫瑰金【eBay精…</p>
+              <p class="price"><span>&yen; 5899</span>&nbsp;&nbsp;<del>&yen; 7299</del></p>
+              <p class="tips"> <i>标签一</i><i>标签二</i><i>标签三</i></p>
+            </div>
+          </li>
+          <li>
+            <img src="../img/goodsImg.png">
+            <div>
+              <p>Apple iPhone 6 Plus 十二期免息分期支付  苹果手机 移动联动4G  玫瑰金【eBay精…</p>
+              <p class="price"><span>&yen; 5899</span>&nbsp;&nbsp;<del>&yen; 7299</del></p>
+              <p class="tips"> <i>标签一</i><i>标签二</i><i>标签三</i></p>
+            </div>
+          </li>
+        </ul>
+    </div>
+</body>
+</html>

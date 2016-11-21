@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><link rel="stylesheet" href="../css/common.css">
+    <script src="../js/flexible.js"></script>
+    <title>搜索</title>
+</head>
+<style>
+  #search{background: #f0f0f0;font-family: 微软雅黑}
+    .searchHead{
+      position: relative;
+      padding: .21rem .26rem;
+      border-bottom: 1px solid #e1e1e1;
+      background: #fff;
+    }
+    .searchHead input{
+      width: 8.266rem;
+      height: .586rem;
+      border-radius: 10px;
+      border: none;
+      font-size: .32rem;
+      padding-left: 1rem;
+      background:#f4f4f4 url("../images/searchIcon.png") no-repeat 45px center;
+      background-size: .32rem .32rem;
+    }
+    .searchHead button{
+      position: absolute;
+      right: .26rem;
+      top: .2rem;
+      border: none;
+      font-size: .32rem;
+      background: none;
+    }
+    .searchContent{
+      position: relative;
+      margin-top: .26rem;
+      background: #fff;
+      padding: .26rem;
+      font-size: 0.373rem;
+      overflow: hidden
+    }
+    .searchContent ul{width: 100%;margin-top: .3rem}
+    .searchContent ul li{
+      list-style:none;
+      float: left;
+      margin:0 .3rem .3rem 0;
+      /*display: inline-block;*/
+      background: #f0f0f0;
+      padding: .15rem .2rem;
+      border-radius: 8px;
+    }
+    .MysearchContent{
+      position: relative;
+      margin-top: .26rem;
+      background: #fff;
+      font-size: 0.373rem;
+      overflow: hidden
+    }
+    .MysearchContent p{padding: .3rem 0 .3rem .26rem;border-bottom: 1px solid #eaeaea;}
+    .MysearchContent i{
+      position: absolute;
+      right: .26rem;
+      display: inline-block;
+      width: .426rem;
+      height: .426rem;
+      background: url("../images/searchDel.png") no-repeat ;
+      background-size: cover;
+    }
+  .MysearchContent ul li{
+    position: relative;
+    list-style: none;
+    height: 1.173rem;
+    line-height: 1.173rem;
+    border-bottom: 1px solid #eaeaea;
+    padding-left: .3rem;
+    font-size: .373rem;
+  }
+  .MysearchContent li button{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    border: none;background: #ea445a;
+    width: 2.226rem;
+    text-align: center;
+    font-size: .373rem;
+    color: #fff;
+  }
+</style>
+<body>
+    <div id="search">
+        <div class="searchHead">
+            <input type="text" placeholder="12期免息"> <button>取消</button>
+        </div>
+        <div class="searchContent">
+            <p>热搜</p>
+            <ul>
+              <!--<li>AppleApple</li>-->
+              <li>Apple</li>
+              <li>AppleApple</li>
+              <li>Apple</li>
+              <li>AppleApple</li>
+              <li>Apple</li>
+              <li>AppleApple</li>
+              <li>Apple</li>
+              <li>Apple</li>
+            </ul>
+        </div>
+        <div class="MysearchContent">
+          <p>我搜索过的<i></i></p>
+          <ul>
+            <li>Apple</li>
+            <li>AppleApple</li>
+            <li>Apple</li>
+            <li>AppleApple</li>
+            <li>Apple</li>
+            <li>AppleApple</li>
+            <li>Apple</li>
+            <li>Apple<button>删除</button></li>
+          </ul>
+        </div>
+    </div>
+</body>
+</html>
